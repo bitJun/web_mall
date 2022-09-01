@@ -1,6 +1,6 @@
 import '@/static/styles/globals.less';
 import 'antd/dist/antd.css';
-import Layout from '@/components/layout'
+import Layout from '../components/Layout';
 
 function App({ Component, pageProps }) {
   return (
