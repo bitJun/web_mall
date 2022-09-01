@@ -1,0 +1,146 @@
+@import '@/static/styles/globals.less';
+.order_view {
+  &_header {
+    padding: 40px 0 44px 40px;
+    font-size: 20px;
+    font-family: PingFangSC-Medium, PingFang SC;
+    font-weight: 500;
+    color: #333333;
+  }
+  &_main {
+    &_tooltips {
+      display: flex;
+      align-items: center;
+      height: 44px;
+      background: #F4F4F4;
+      &_shop {
+        width: 215px;
+        text-indent: 51px;
+        font-size: 12px;
+        font-family: PingFangSC-Medium, PingFang SC;
+        font-weight: 500;
+        color: #333333;
+      }
+      &_goods {
+        width: 444px;
+        font-size: 12px;
+        font-family: PingFangSC-Medium, PingFang SC;
+        font-weight: 500;
+        color: #333333;
+      }
+      &_num {
+        width: 219px;
+        font-size: 12px;
+        font-family: PingFangSC-Medium, PingFang SC;
+        font-weight: 500;
+        color: #333333;
+      }
+      &_total {
+        flex: 1;
+        font-size: 12px;
+        font-family: PingFangSC-Medium, PingFang SC;
+        font-weight: 500;
+        color: #333333;
+      }
+    }
+    &_list {
+      max-height: 1008px;
+      overflow: scroll;
+      &_item {
+        padding: 25px 20px 33px 15px;
+        &_title {
+          text-indent: 37px;
+          height: 17px;
+          font-size: 12px;
+          font-family: PingFangSC-Medium, PingFang SC;
+          font-weight: 500;
+          color: #333333;
+          line-height: 17px;
+          margin-bottom: 20px;
+        }
+        &_content {
+          width: 943px;
+          height: 120px;
+          background: #F8F8F8;
+          border-radius: 12px;
+          margin-bottom: 17px;
+          padding: 20px 0;
+          display: flex;
+          align-items: center;
+          &_info {
+            width: 640px;
+            padding-left: 37px;
+            box-sizing: border-box;
+            display: flex;
+            height: 80px;
+            &_img {
+              width: 80px;
+              height: 80px;
+            }
+            &_container {
+              padding-left: 12px;
+              &_name {
+                height: 20px;
+                font-size: 14px;
+                font-family: PingFangSC-Regular, PingFang SC;
+                font-weight: 400;
+                color: #333333;
+                line-height: 20px;
+                margin-bottom: 44px;
+              }
+              &_desc {
+                height: 17px;
+                font-size: 12px;
+                font-family: PingFangSC-Regular, PingFang SC;
+                font-weight: 400;
+                color: #999999;
+                line-height: 17px;
+              }
+            }
+          }
+          &_num {
+            width: 223px;
+            font-size: 14px;
+            font-family: ArialMT;
+            color: #333333;
+          }
+          &_price {
+            flex: 1;
+            font-size: 14px;
+            font-family: PingFangSC-Medium, PingFang SC;
+            font-weight: 500;
+            color: #CF4345;
+          }
+        }
+        &_footer {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 0 44px 0 38px;
+          height: 20px;
+          &_createtime {
+            font-size: 14px;
+            font-family: PingFangSC-Regular, PingFang SC;
+            font-weight: 400;
+            color: #666666;
+          }
+          &_fee {
+            font-size: 14px;
+            font-family: PingFangSC-Regular, PingFang SC;
+            font-weight: 400;
+            color: #333333;
+            &_num {
+              color: #CF4345;
+            }
+          }
+        }
+      }
+    }
+  }
+  &_footer {
+    padding-right: 22px;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 30px;
+  }
+}

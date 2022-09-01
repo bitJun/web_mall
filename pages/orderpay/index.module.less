@@ -1,0 +1,102 @@
+@import '@/static/styles/globals.less';
+body {
+  background: #F8F8F8;
+}
+.pay_view {
+  width: 1200px;
+  background: #ffffff;
+  margin: 20px auto;
+  height: 904px;
+  padding: 0 30px;
+  box-sizing: border-box;
+  &_header {
+    padding: 58px 0 34px 0;
+    border-bottom: 1px dashed #D8D8D8;
+    font-size: 18px;
+    font-family: PingFangSC-Semibold, PingFang SC;
+    font-weight: 600;
+    color: #333333;
+    display: flex;
+    align-items: center;
+    margin-bottom: 42px;
+    &_num {
+      margin-left: 39px;
+      margin-right: 10px;
+      font-size: 20px;
+      font-family: PingFangSC-Regular, PingFang SC;
+      font-weight: 400;
+      color: #CF4345;
+    }
+    &_unit {
+      font-size: 14px;
+      font-family: PingFangSC-Regular, PingFang SC;
+      font-weight: 400;
+      color: #333333;
+    }
+  }
+  &_title {
+    height: 25px;
+    font-size: 18px;
+    font-family: PingFangSC-Semibold, PingFang SC;
+    font-weight: 600;
+    color: #333333;
+    line-height: 25px;
+  }
+  &_main {
+    padding: 42px 0 0 195px;
+    &_info {
+      display: flex;
+      margin-bottom: 30px;
+      &_code {
+        width: 210px;
+        height: 210px;
+        border-radius: 1px;
+        border: 1px solid #FF537C;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &_img {
+          width: 160px;
+          height: 160px;
+        }
+      }
+      &_detail {
+        padding-left: 39px;
+        padding-top: 30px;
+        &_item {
+          display: flex;
+          height: 32px;
+          align-items: center;
+          margin-bottom: 10px;
+          font-size: 14px;
+          font-family: PingFangSC-Regular, PingFang SC;
+          font-weight: 400;
+          color: #333333;
+          &_icon {
+            width: 16px;
+            height: 14px;
+            margin-right: 5px;
+          }
+        }
+      }
+    }
+    &_conact {
+      display: flex;
+      align-items: center;
+      font-size: 18px;
+      font-family: PingFangSC-Regular, PingFang SC;
+      font-weight: 400;
+      color: #FF537C;
+      height: 25px;
+      cursor: pointer;
+      &_icon {
+        margin-left: 9px;
+        width: 23px;
+        height: 22px;
+      }
+    }
+  }
+  &_result {
+
+  }
+}

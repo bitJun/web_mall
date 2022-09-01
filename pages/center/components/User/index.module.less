@@ -1,0 +1,85 @@
+@import '@/static/styles/globals.less';
+.user_view {
+  height: 1319px;
+  background: #F8F8F8;
+  &_info {
+    background: #ffffff;
+    height: 152px;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    padding: 36px 50px;
+    box-sizing: border-box;
+    &_logo {
+      width: 80px;
+      height: 80px;
+      border-radius: 100px;
+      margin-right: 24px;
+    }
+    &_detail {
+      &_name {
+        height: 28px;
+        font-size: 20px;
+        font-family: PingFangSC-Medium, PingFang SC;
+        font-weight: 500;
+        color: #333333;
+        line-height: 28px;
+        display: flex;
+        margin-bottom: 12px;
+      }
+      &_location {
+        height: 20px;
+        font-size: 14px;
+        font-family: PingFangSC-Regular, PingFang SC;
+        font-weight: 400;
+        color: #333333;
+        line-height: 20px;
+      }
+    }
+  }
+  &_order {
+    width: 978px;
+    height: 120px;
+    background: #FFFFFF;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    &_item {
+      flex: 1;
+      font-size: 16px;
+      font-family: PingFangSC-Medium, PingFang SC;
+      font-weight: 500;
+      color: #333333;
+      text-indent: 59px;
+      &_num {
+        color: #FF537C;
+        margin-left: 10px;
+      }
+    }
+  }
+  &_goods {
+    background: #ffffff;
+    &_title {
+      height: 76px;
+      line-height: 76px;
+      text-indent: 41px;
+      font-size: 20px;
+      font-family: PingFangSC-Medium, PingFang SC;
+      font-weight: 500;
+      color: #333333;
+    }
+    &_list {
+      height: 946px;
+      padding: 24px 40px 74px 41px;
+      overflow: scroll;
+      box-sizing: border-box;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      &_item {
+        margin-bottom: 12px;
+        width: 291px;
+      }
+    }
+  }
+}

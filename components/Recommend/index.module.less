@@ -1,0 +1,45 @@
+@import '@/static/styles/globals.less';
+.recommend_view {
+  margin-bottom: 50px;
+  &_header {
+    height: 58px;
+    width: 392px;
+    padding-left: 24px;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    background-image: url('/static/images/bg.png');
+    background-size: cover;
+    font-size: 24px;
+    font-family: PingFangSC-Medium, PingFang SC;
+    font-weight: 500;
+    color: #FFFFFF;
+    span {
+      margin-left: 12px;
+      font-weight: normal
+    }
+  }
+  &_list {
+    display: flex;
+    flex-wrap: wrap;
+    &_item {
+      width: 196px;
+      height: 204px;
+      cursor: pointer;
+    }
+  }
+  &_lists {
+    display: flex;
+    flex-wrap: wrap;
+    &_item {
+      width: 196px;
+      height: 408px;
+      cursor: pointer;
+      &_single {
+        width: 196px;
+        height: 204px;
+        cursor: pointer;
+      }
+    }
+  }
+}

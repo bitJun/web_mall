@@ -1,0 +1,46 @@
+@import '@/static/styles/globals.less';
+body {
+  background: #F8F8F8;
+}
+.center_view {
+  width: 1200px;
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-between;
+  &_nav {
+    width: 210px;
+    height: 1319px;
+    background: #FFFFFF;
+    padding: 16px 0;
+    box-sizing: border-box;
+    &_item {
+      height: 44px;
+      line-height: 44px;
+      font-size: 14px;
+      font-family: PingFangSC-Regular, PingFang SC;
+      font-weight: 400;
+      color: #333333;
+      text-indent: 32px;
+      position: relative;
+      cursor: pointer;
+    }
+    &_item.active {
+      background: rgba(255, 83, 124, 0.1);
+      color: #FF537C;
+    }
+    &_item.active::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 2px;
+      height: 44px;
+      background: #FF537C;
+    }
+  }
+  &_content {
+    width: 978px;
+    height: 1319px;
+    background: #FFFFFF;
+  }
+}

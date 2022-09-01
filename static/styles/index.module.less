@@ -1,0 +1,72 @@
+@import './globals.less';
+body {
+  background: #F2F2F2;
+}
+.index_view {
+  &_banner {
+    height: 440px;
+  }
+  &_category {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 22px 0 32px 0;
+    border-bottom: 1px solid #D8D8D8;
+    &_breadcrumb {
+      margin-bottom: 34px;
+      :global {
+        .ant-breadcrumb-link {
+          font-size: 14px;
+          font-family: PingFangSC-Regular, PingFang SC;
+          font-weight: 400;
+          color: #8C8C98;
+        }
+        .ant-breadcrumb li:last-child .ant-breadcrumb-link {
+          color: #262632;
+        }
+      }
+    }
+  }
+  &_list {
+    padding-top: 40px;
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    &_item {
+      width: 291px;
+      margin-right: 12px;
+      margin-bottom: 50px;
+    }
+    &_item:nth-child(4n) {
+      margin-right: 0;
+    }
+  }
+  &_recommend {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    &_item {
+      width: 392px;
+    }
+  }
+  &_modular {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 1200px;
+    margin: 0 auto;
+    &_item {
+      width: 594px;
+      margin-bottom: 50px;
+    }
+  }
+  &_pagination {
+    padding-bottom: 100px;
+    display: flex;
+    justify-content: flex-end;
+    width: 1200px;
+    margin: 0 auto;
+  }
+}
