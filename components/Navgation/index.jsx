@@ -362,7 +362,7 @@ const Navgation = (props) => {
                   <div className={styles.navgation_section_nav_main_submenu_item_name}>
                     {json?.name} 
                     <img
-                      src='/static/images/more_icon.png'
+                      src='../static/images/more_icon.png'
                       className={styles.navgation_section_nav_main_submenu_item_name_icon}
                     />
                   </div>
