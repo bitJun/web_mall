@@ -6,7 +6,7 @@ import {
   Form,
   Input,
   Modal,
-  Select
+  Select,
 } from 'antd';
 import styles from './index.module.less';
 
@@ -14,6 +14,7 @@ const Address = (props) => {
   const [defaultAddressId, setDefaultAddressId] = useState(1);
   const [isModalVisible, setIsModalVisible] = useState(false);
   const [title, setTitle] = useState('新增收货地址');
+  const { Option } = Select;
   const options = [
     {
       value: 'zhejiang',
